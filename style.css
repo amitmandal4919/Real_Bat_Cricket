@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
+}
 
 body {
 color: white;
@@ -49,16 +49,14 @@ font-size: 1.04rem;
 }
 
 /* ================= BANNER ================= */
-/* ================= BANNER ================= */
 
 .banner {
-    background-image: url("BANNER");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 70vh;
-    padding: 70px 8%;
+background-image: url("BANNER");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+min-height: 46vh;
+padding: 70px 8%;
 }
 
 .turn {
@@ -109,12 +107,9 @@ padding: 15px;
 border-radius: 15px;
 min-height: 200px;
 width: 180px;
-
 background-color: rgba(2, 9, 9, 0.373);
-
 text-align: center;
 transition: 0.3s;
-
 }
 
 /* Card Hover */
@@ -172,17 +167,7 @@ min-height: 250px;
 padding: 30px 20px;
 }
 
-
-h4 {
-text-align: center;
-font-size: 1.5rem;
-margin: 35px 0 20px;
-color: rgb(30, 233, 40);
-}
-
-
-/* ================= FEATURES ================= */
-
+/* ================= FEATURES / HOW ================= */
 
 .how {
 display: flex;
@@ -192,87 +177,6 @@ gap: 20px;
 flex-wrap: wrap;
 padding: 20px;
 }
-
-
-/* ================= FEATURE CARDS ================= */
-
-
-.motion,
-.multi,
-.mic,
-.trophy,
-.graph {
-padding: 15px;
-border-radius: 15px;
-min-height: 200px;
-width: 180px;
-
-
-background-color: rgba(2, 9, 9, 0.373);
-
-
-text-align: center;
-transition: 0.3s;
-
-
-}
-
-
-/* Card Hover */
-
-
-.motion:hover,
-.multi:hover,
-.mic:hover,
-.trophy:hover,
-.graph:hover {
-transform: translateY(-5px);
-background-color: rgba(20, 40, 40, 0.7);
-}
-
-
-/* ================= FEATURE ICONS ================= */
-
-
-.motion img,
-.multi img,
-.mic img,
-.trophy img,
-.graph img {
-width: 60px;
-height: 60px;
-object-fit: contain;
-margin-bottom: 10px;
-}
-
-
-/* ================= FEATURE HEADINGS ================= */
-
-
-.motion h6,
-.multi h6,
-.mic h6,
-.trophy h6,
-.graph h6 {
-text-align: center;
-font-size: 1.14rem;
-margin-bottom: 10px;
-}
-
-
-/* ================= FEATURE TEXT ================= */
-
-
-.motion p,
-.multi p,
-.mic p,
-.trophy p,
-.graph p {
-text-align: center;
-font-size: 0.9rem;
-line-height: 1.4;
-}
-
 
 section {
     padding: 80px 8%;
@@ -343,7 +247,6 @@ p {
     font-style: italic;
 }
 
-
 /* CONTACT */
 
 .contact-section {
@@ -359,7 +262,6 @@ p {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     text-align: left;
-
     background: rgba(5, 20, 40, .8);
     border: 1px solid #008cff;
     border-radius: 20px;
@@ -374,7 +276,6 @@ form textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 15px;
-
     background: #06172d;
     border: 1px solid #008cff;
     border-radius: 10px;
@@ -392,13 +293,11 @@ form button {
     padding: 15px;
     border: none;
     border-radius: 10px;
-
     background: #39ff14;
     color: #001000;
     font-weight: 800;
     cursor: pointer;
 }
-
 
 /* FAQ */
 
@@ -414,11 +313,9 @@ form button {
 details {
     margin-bottom: 15px;
     padding: 20px;
-
     background: #06172d;
     border: 1px solid #008cff;
     border-radius: 12px;
-
     cursor: pointer;
 }
 
@@ -431,12 +328,26 @@ details p {
     margin-top: 15px;
 }
 
-
-/* MOBILE */
-
 /* ================= MOBILE ================= */
 
 @media (max-width: 700px) {
+
+    section {
+        padding: 60px 5%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-box {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
 
     nav {
         flex-direction: column;
@@ -454,13 +365,19 @@ details p {
         font-size: 0.85rem;
     }
 
-    /* YAHAN CHANGE KIYA GAYA HAI */
+    /* SIRF YE FIX KIYA HAI: Mobile par banner katega nahi */
     .banner {
-        min-height: 280px;            /* Phone height ke hisab se perfect ratio */
-        height: 40vw;                 /* Screen width ke mutabiq scale hoga */
-        background-size: contain;      /* Puri banner image bina kate dikhegi */
-        background-position: center;
-        padding: 0;                   /* Extra padding hata di */
+        min-height: 200px;
+        background-size: contain;
+        padding: 0;
+    }
+
+    .turn {
+        font-size: 2.2rem;
+    }
+
+    .run {
+        font-size: 1rem;
     }
 
     .features {
@@ -483,11 +400,8 @@ details p {
 
 @media (max-width: 450px) {
 
-    /* SMALL PHONE KE LIYE BANNER */
-    .banner {
-        min-height: 220px;
-        height: 50vw;
-        background-size: contain;
+    .turn {
+        font-size: 1.8rem;
     }
 
     .features {
@@ -512,77 +426,3 @@ details p {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
