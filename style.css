@@ -49,16 +49,16 @@ font-size: 1.04rem;
 }
 
 /* ================= BANNER ================= */
+/* ================= BANNER ================= */
 
 .banner {
-background-image: url("BANNER");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-min-height: 46vh;
-
-padding: 70px 8%;
-
+    background-image: url("BANNER");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 70vh;
+    padding: 70px 8%;
 }
 
 .turn {
@@ -434,72 +434,48 @@ details p {
 
 /* MOBILE */
 
-@media (max-width: 700px) {
-
-    section {
-        padding: 60px 5%;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    .about-features {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-box {
-        grid-template-columns: 1fr;
-        padding: 25px;
-    }
-}    
-
 /* ================= MOBILE ================= */
 
 @media (max-width: 700px) {
 
-nav {
-    flex-direction: column;
-    height: auto;
-    padding: 15px 10px;
-    gap: 15px;
-}
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 10px;
+        gap: 15px;
+    }
 
-nav ul {
-    flex-wrap: wrap;
-    gap: 10px;
-}
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 
-nav ul li a {
-    font-size: 0.85rem;
-}
+    nav ul li a {
+        font-size: 0.85rem;
+    }
 
-.banner {
-    min-height: 50vh;
-    padding: 50px 25px;
-}
+    /* YAHAN CHANGE KIYA GAYA HAI */
+    .banner {
+        min-height: 280px;            /* Phone height ke hisab se perfect ratio */
+        height: 40vw;                 /* Screen width ke mutabiq scale hoga */
+        background-size: contain;      /* Puri banner image bina kate dikhegi */
+        background-position: center;
+        padding: 0;                   /* Extra padding hata di */
+    }
 
-.turn {
-    font-size: 2.2rem;
-}
+    .features {
+        padding: 10px;
+        gap: 15px;
+    }
 
-.run {
-    font-size: 1rem;
-}
-
-.features {
-    padding: 10px;
-    gap: 15px;
-}
-
-.motion,
-.multi,
-.mic,
-.trophy,
-.graph {
-    width: 45%;
-    min-height: 210px;
-}
+    .motion,
+    .multi,
+    .mic,
+    .trophy,
+    .graph {
+        width: 45%;
+        min-height: 210px;
+    }
 
 }
 
@@ -507,29 +483,106 @@ nav ul li a {
 
 @media (max-width: 450px) {
 
-.turn {
-    font-size: 1.8rem;
+    /* SMALL PHONE KE LIYE BANNER */
+    .banner {
+        min-height: 220px;
+        height: 50vw;
+        background-size: contain;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .motion,
+    .multi,
+    .mic,
+    .trophy,
+    .graph {
+        width: 90%;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    nav ul li a {
+        font-size: 0.75rem;
+    }
+
 }
 
-.features {
-    flex-direction: column;
-    align-items: center;
-}
 
-.motion,
-.multi,
-.mic,
-.trophy,
-.graph {
-    width: 90%;
-}
 
-nav ul {
-    gap: 8px;
-}
 
-nav ul li a {
-    font-size: 0.75rem;
-}
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
