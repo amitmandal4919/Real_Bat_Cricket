@@ -1,0 +1,535 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+color: white;
+background-color: #0B1220;
+font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+nav {
+display: flex;
+justify-content: space-around;
+align-items: center;
+min-height: 90px;
+background-color: rgb(9, 9, 48);
+}
+
+.left img {
+width: 200px;
+height: auto;
+object-fit: contain;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+nav ul li {
+list-style: none;
+}
+
+nav ul li a {
+color: rgb(74, 226, 50);
+text-decoration: none;
+transition: 0.2s;
+}
+
+nav ul li a:hover {
+color: rgb(91, 188, 26);
+font-size: 1.04rem;
+}
+
+/* ================= BANNER ================= */
+
+.banner {
+background-image: url("BANNER");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+min-height: 46vh;
+
+padding: 70px 8%;
+
+}
+
+.turn {
+margin: 0;
+line-height: 1.15;
+font-size: 3rem;
+}
+
+.turn span {
+color: rgb(74, 226, 50);
+}
+
+.run {
+margin-top: 20px;
+text-align: left;
+font-size: 1.1rem;
+line-height: 1.5;
+}
+
+/* ================= FEATURES TITLE ================= */
+
+h4 {
+text-align: center;
+font-size: 1.5rem;
+margin: 35px 0 20px;
+color: rgb(30, 233, 40);
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+display: flex;
+justify-content: center;
+align-items: stretch;
+gap: 20px;
+flex-wrap: wrap;
+padding: 20px;
+}
+
+/* ================= FEATURE CARDS ================= */
+
+.motion,
+.multi,
+.mic,
+.trophy,
+.graph {
+padding: 15px;
+border-radius: 15px;
+min-height: 200px;
+width: 180px;
+
+background-color: rgba(2, 9, 9, 0.373);
+
+text-align: center;
+transition: 0.3s;
+
+}
+
+/* Card Hover */
+
+.motion:hover,
+.multi:hover,
+.mic:hover,
+.trophy:hover,
+.graph:hover {
+transform: translateY(-5px);
+background-color: rgba(20, 40, 40, 0.7);
+}
+
+/* ================= FEATURE ICONS ================= */
+
+.motion img,
+.multi img,
+.mic img,
+.trophy img,
+.graph img {
+width: 60px;
+height: 60px;
+object-fit: contain;
+margin-bottom: 10px;
+}
+
+/* ================= FEATURE HEADINGS ================= */
+
+.motion h6,
+.multi h6,
+.mic h6,
+.trophy h6,
+.graph h6 {
+text-align: center;
+font-size: 1.14rem;
+margin-bottom: 10px;
+}
+
+/* ================= FEATURE TEXT ================= */
+
+.motion p,
+.multi p,
+.mic p,
+.trophy p,
+.graph p {
+text-align: center;
+font-size: 0.9rem;
+line-height: 1.4;
+}
+
+/* ================= HOW IT WORKS ================= */
+
+.work {
+min-height: 250px;
+padding: 30px 20px;
+}
+
+
+h4 {
+text-align: center;
+font-size: 1.5rem;
+margin: 35px 0 20px;
+color: rgb(30, 233, 40);
+}
+
+
+/* ================= FEATURES ================= */
+
+
+.how {
+display: flex;
+justify-content: center;
+align-items: stretch;
+gap: 20px;
+flex-wrap: wrap;
+padding: 20px;
+}
+
+
+/* ================= FEATURE CARDS ================= */
+
+
+.motion,
+.multi,
+.mic,
+.trophy,
+.graph {
+padding: 15px;
+border-radius: 15px;
+min-height: 200px;
+width: 180px;
+
+
+background-color: rgba(2, 9, 9, 0.373);
+
+
+text-align: center;
+transition: 0.3s;
+
+
+}
+
+
+/* Card Hover */
+
+
+.motion:hover,
+.multi:hover,
+.mic:hover,
+.trophy:hover,
+.graph:hover {
+transform: translateY(-5px);
+background-color: rgba(20, 40, 40, 0.7);
+}
+
+
+/* ================= FEATURE ICONS ================= */
+
+
+.motion img,
+.multi img,
+.mic img,
+.trophy img,
+.graph img {
+width: 60px;
+height: 60px;
+object-fit: contain;
+margin-bottom: 10px;
+}
+
+
+/* ================= FEATURE HEADINGS ================= */
+
+
+.motion h6,
+.multi h6,
+.mic h6,
+.trophy h6,
+.graph h6 {
+text-align: center;
+font-size: 1.14rem;
+margin-bottom: 10px;
+}
+
+
+/* ================= FEATURE TEXT ================= */
+
+
+.motion p,
+.multi p,
+.mic p,
+.trophy p,
+.graph p {
+text-align: center;
+font-size: 0.9rem;
+line-height: 1.4;
+}
+
+
+section {
+    padding: 80px 8%;
+    color: white;
+}
+
+.section-tag {
+    color: #39ff14;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 42px;
+    margin: 15px 0 25px;
+}
+
+h2 span {
+    color: #39ff14;
+}
+
+p {
+    color: #d4d9e2;
+    line-height: 1.7;
+}
+
+/* ABOUT */
+
+.about-section {
+    background: linear-gradient(135deg, #020817, #07152b);
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-content > p {
+    font-size: 17px;
+    max-width: 750px;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin: 35px 0;
+}
+
+.about-features div {
+    padding: 25px 15px;
+    text-align: center;
+    background: rgba(10, 30, 55, .8);
+    border: 1px solid #00aaff;
+    border-radius: 15px;
+    font-size: 28px;
+}
+
+.about-features b {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.about-content h3 {
+    color: #39ff14;
+    font-style: italic;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+    background: #030b18;
+    text-align: center;
+}
+
+.contact-box {
+    max-width: 1000px;
+    margin: 35px auto 0;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: left;
+
+    background: rgba(5, 20, 40, .8);
+    border: 1px solid #008cff;
+    border-radius: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 25px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    background: #06172d;
+    border: 1px solid #008cff;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+
+    background: #39ff14;
+    color: #001000;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+/* FAQ */
+
+.faq-section {
+    background: #020817;
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+details {
+    margin-bottom: 15px;
+    padding: 20px;
+
+    background: #06172d;
+    border: 1px solid #008cff;
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+summary {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+details p {
+    margin-top: 15px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    section {
+        padding: 60px 5%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-box {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}    
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 10px;
+    gap: 15px;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul li a {
+    font-size: 0.85rem;
+}
+
+.banner {
+    min-height: 50vh;
+    padding: 50px 25px;
+}
+
+.turn {
+    font-size: 2.2rem;
+}
+
+.run {
+    font-size: 1rem;
+}
+
+.features {
+    padding: 10px;
+    gap: 15px;
+}
+
+.motion,
+.multi,
+.mic,
+.trophy,
+.graph {
+    width: 45%;
+    min-height: 210px;
+}
+
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 450px) {
+
+.turn {
+    font-size: 1.8rem;
+}
+
+.features {
+    flex-direction: column;
+    align-items: center;
+}
+
+.motion,
+.multi,
+.mic,
+.trophy,
+.graph {
+    width: 90%;
+}
+
+nav ul {
+    gap: 8px;
+}
+
+nav ul li a {
+    font-size: 0.75rem;
+}
+
+}
